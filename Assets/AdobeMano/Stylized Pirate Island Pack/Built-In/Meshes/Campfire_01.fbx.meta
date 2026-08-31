@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: efa4a8073f413354f975f9ffd104401d
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Cooking Pot
+    second: {fileID: 2100000, guid: 909e0937897f6d44184009d982ad9f24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Logs Faces
+    second: {fileID: 2100000, guid: 307f528234ce9f14b84e15dbdd4fc742, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Logs Wood
+    second: {fileID: 2100000, guid: 141c375ca7ff6df459a6f533d44c9a56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Rocks
+    second: {fileID: 2100000, guid: 6fee1cf3d65ddbf43b073d73df99af59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Sticks
+    second: {fileID: 2100000, guid: d9b2b42230762cc4c95fe78a510e3bf9, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Cooking Pot_BaseColor
+    second: {fileID: 2800000, guid: ea73d70faca78554c9714e405c1fd2a7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Cooking Pot_Metallic
+    second: {fileID: 2800000, guid: b21acbf43a13a2b45a69e7533ed88083, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Cooking Pot_Normal
+    second: {fileID: 2800000, guid: 2a4e6961458104b4f85df6d29e63a83a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Cooking Pot_Roughness
+    second: {fileID: 2800000, guid: 863a6a17db0ce45459a15d7e3a101d76, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Logs Faces_BaseColor
+    second: {fileID: 2800000, guid: b79d7ad0eb30c614192c025e7bda4efd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Logs Faces_Metallic
+    second: {fileID: 2800000, guid: 0afb872785606c24b8521df39ae11672, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Logs Faces_Normal
+    second: {fileID: 2800000, guid: 53cacc51a5abd3d41a69bd2f3f14eb14, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Logs Faces_Roughness
+    second: {fileID: 2800000, guid: dc95c58983228154eb0ee6c680dfa79b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Logs Wood_BaseColor
+    second: {fileID: 2800000, guid: a88320d15dddef84f9eb33a670908e41, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Logs Wood_Metallic
+    second: {fileID: 2800000, guid: e153efce58166a54483db8b1c086d461, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Logs Wood_Normal
+    second: {fileID: 2800000, guid: c44ae7a719aa91e41a55c90512f4b097, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Logs Wood_Roughness
+    second: {fileID: 2800000, guid: 1951db56f5b4a104bbc7258896f708c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Rocks_BaseColor
+    second: {fileID: 2800000, guid: 71635ed2ba38de24789345a95882b2b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Rocks_Metallic
+    second: {fileID: 2800000, guid: 2f4923531c5e21848af4dbacd01986e0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Rocks_Normal
+    second: {fileID: 2800000, guid: 86b55678b9b7f9e40a390888dd97633a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Rocks_Roughness
+    second: {fileID: 2800000, guid: b5b96260fc3250f47945644c726b0dfa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Sticks_BaseColor
+    second: {fileID: 2800000, guid: 6cd0dfb6874dc9c4c84cad52e9f823e8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Sticks_Metallic
+    second: {fileID: 2800000, guid: 2aab865ee685b3b4e97dd3f8bc240574, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Sticks_Normal
+    second: {fileID: 2800000, guid: 2c9f722f0ad5114478951c7feb4a1742, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Campfire_01 Sticks_Roughness
+    second: {fileID: 2800000, guid: 9cbe792662db4014cb64db29285d1b86, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 336304
+  packageName: 3D Stylized Pirate Island Props Pack
+  packageVersion: 1.0
+  assetPath: Assets/AdobeMano/Stylized Pirate Island Pack/Built-In/Meshes/Campfire_01.fbx
+  uploadId: 798060
