@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        // Guardar la posicion inicial de Remy como punto de reaparicion
+        // Guardar la posicion inicial 
         GameObject jugador = GameObject.FindGameObjectWithTag("Player");
         if (jugador != null)
         {
@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
         if (jugador != null)
         {
             CharacterController cc = jugador.GetComponent<CharacterController>();
-            if (cc != null) cc.enabled = false; // Desactivar momentaneo para moverlo
+            if (cc != null) cc.enabled = false; 
 
             if (vidas > 0)
             {

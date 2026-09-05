@@ -5,8 +5,12 @@ public class PerroCompanero : MonoBehaviour
     [Header("Ajustes de Seguimiento")]
     public Transform jugador;
     public float distanciaParada = 2.5f;
-    public float velocidadSeguimiento = 3.5f;
+    public float velocidadCaminar = 4.0f;
+    public float velocidadCorrer = 9.5f; 
     public float velocidadGiro = 8f;
+    public float fuerzaSalto = 8.5f;
+    public float gravedad = -24.0f;
+    private float velocidadVerticalY = 0f;
 
     private Animator animator;
     private CharacterController characterController;
@@ -45,33 +49,61 @@ public class PerroCompanero : MonoBehaviour
 
             if (direccion != Vector3.zero)
             {
-                // Giro suave hacia Remy
+               
                 Quaternion rotacionObjetivo = Quaternion.LookRotation(direccion);
                 transform.rotation = Quaternion.Slerp(transform.rotation, rotacionObjetivo, velocidadGiro * Time.deltaTime);
             }
 
-            // 2. Movimiento hacia adelante
-            Vector3 movimiento = transform.forward * velocidadSeguimiento * Time.deltaTime;
+            //2. Acelera si alex esta lejos para no perderse
+            float velocidadActual = (distancia > 5.0f) ? velocidadCorrer : velocidadCaminar;
+            Vector3 movimientoHorizontal = transform.forward * velocidadActual;
 
-            // Si tiene CharacterController lo usamos para respetar el suelo
-            if (characterController != null && characterController.enabled)
+            //3. Salto y Gravedad
+            if (characterController.isGrounded)
             {
-                movimiento.y = Physics.gravity.y * Time.deltaTime; // Aplicar gravedad
-                characterController.Move(movimiento);
+                if (velocidadVerticalY < 0f) velocidadVerticalY = -2f;
+                // Salta 
+                if (Input.GetKeyDown(KeyCode.Space) || (jugador.position.y - transform.position.y) > 0.6f)
+                {
+                    velocidadVerticalY = fuerzaSalto;
+                }
             }
             else
             {
-                // Si no tiene controller, avanza directo manteniendo su altura Y actual
-                transform.position += transform.forward * velocidadSeguimiento * Time.deltaTime;
+                velocidadVerticalY += gravedad * Time.deltaTime;
             }
+            // 4. APLICAR MOVIMIENTO FÍSICO AL CONTROLADOR
+            Vector3 movimientoFinal = movimientoHorizontal + Vector3.up * velocidadVerticalY;
+            characterController.Move(movimientoFinal * Time.deltaTime);
 
-            // Animación de trote
-            if (animator != null) animator.SetFloat("Vert", 1f);
+
+            // 5. Animación de patas
+            if (animator != null)
+            {
+                animator.SetFloat("Vert", 1f);
+                // State: 0 para caminar (walk), 1 para correr (run)
+                animator.SetFloat("State", (distancia > 5.0f) ? 1f : 0f);
+            }
         }
+
         else
         {
-            // Animación de estar quieto (Idle)
-            if (animator != null) animator.SetFloat("Vert", 0f);
+            // Detenido junto al jugador
+            if (characterController.isGrounded && velocidadVerticalY < 0f)
+            {
+                velocidadVerticalY = -2f;
+            }
+            else
+            {
+                velocidadVerticalY += gravedad * Time.deltaTime;
+            }
+
+            characterController.Move(Vector3.up * velocidadVerticalY * Time.deltaTime);
+            if (animator != null)
+            {
+                animator.SetFloat("Vert", 0f); // Vuelve al Idle
+                animator.SetFloat("State", 0f);
+            }
         }
     }
 }

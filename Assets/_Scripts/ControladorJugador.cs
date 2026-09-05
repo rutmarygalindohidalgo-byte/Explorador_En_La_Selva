@@ -40,7 +40,7 @@ public class ControladorJugador : MonoBehaviour
         {
             if (velocidadVerticalY < 0f)
             {
-                velocidadVerticalY = -2f; // Mantiene el contacto estable con el suelo
+                velocidadVerticalY = -2f; 
             }
 
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("Jump"))
