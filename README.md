@@ -20,7 +20,14 @@ El objetivo de Alex es sobrevivir al asedio de la fauna salvaje, esquivar las tr
 El jugador toma el control de Alex, un explorador que debe sortear diversos peligros en un entorno selvático (animales salvajes, trampas explosivas y obstáculos naturales) con el apoyo de su fiel compañero canino, hasta alcanzar el cofre del tesoro que marca la victoria de la expedición.
 
 ---
+##  Recursos de Terceros
 
+Para el desarrollo del entorno visual, animaciones y ambientación sonora se integraron recursos de uso libre provenientes de las siguientes plataformas:
+
+* **Unity Asset Store:** Modelos 3D de vegetación, terreno selvático, fauna ambiental y el prefab del cofre del tesoro.
+* **Adobe Mixamo:** Modelo del explorador Alex y conjunto de animaciones para su sistema de movimiento (Idle, Walk, Run).
+* **Pixabay:** Efectos sonoros (SFX) para la mecha de la trampa, la explosión y los sonidos ambientales.
+---
 ##  Controles del Juego
 
 | Acción | Tecla / Entrada |
